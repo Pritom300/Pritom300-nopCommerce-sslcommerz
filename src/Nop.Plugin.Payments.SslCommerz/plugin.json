@@ -1,0 +1,10 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "SSLCommerz Payment",
+  "SystemName": "Payments.SslCommerz",
+  "Version": "4.80.17",
+  "SupportedVersions": [ "4.80" ],
+  "Author": "Pritom Sarkar",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Payments.SslCommerz.dll"
+}

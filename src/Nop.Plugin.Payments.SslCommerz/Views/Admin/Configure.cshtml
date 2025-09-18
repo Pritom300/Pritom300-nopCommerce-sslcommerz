@@ -1,0 +1,27 @@
+﻿@model Nop.Plugin.Payments.SslCommerz.Models.ConfigureModel
+@using Nop.Web.Framework.Localization
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="card">
+    <div class="card-body">
+        <form asp-action="Configure" method="post">
+            <div class="form-group">
+                <label>Store ID</label>
+                <input asp-for="StoreId" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Store Password</label>
+                <input asp-for="StorePassword" class="form-control" type="password" />
+            </div>
+            <div class="form-group form-check">
+                <input asp-for="UseSandbox" class="form-check-input" />
+                <label asp-for="UseSandbox" class="form-check-label">Use Sandbox</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+            @if (ViewBag.Success != null)
+            {
+                <div class="alert alert-success mt-2">@ViewBag.Success</div>
+            }
+        </form>
+    </div>
+</div>
